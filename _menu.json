@@ -1,0 +1,28 @@
+{
+	"code": "success",
+	"data": [{
+		"dataName": "about.html",
+		"dataSrc": "about.html"
+	}, {
+		"dataName": "contact.html",
+		"dataSrc": "contact.html"
+	}, {
+		"dataName": "index.html",
+		"dataSrc": "index.html"
+	}, {
+		"dataName": "news_list.html",
+		"dataSrc": "news_list.html"
+	}, {
+		"dataName": "product.html",
+		"dataSrc": "product.html"
+	}, {
+		"dataName": "ryzz.html",
+		"dataSrc": "ryzz.html"
+	}, {
+		"dataName": "xwzzy.html",
+		"dataSrc": "xwzzy.html"
+	}, {
+		"dataName": "zzy.html",
+		"dataSrc": "zzy.html"
+	}]
+}

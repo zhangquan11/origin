@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="css/index.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<title>垃圾分类推进系统</title>
+<meta name="keywords" content="<?php echo $webkey?>" />
+<meta name="description" content="<?php echo $webms?>" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	function timer(opj){
+		$(opj).find('ul').animate({
+			marginTop : "-80px"  
+			},500,function(){  
+			$(this).css({marginTop : "0rem"}).find("li:first").appendTo(this);  
+		})  
+	}
+	$(function(){ 
+		var num = $('.notice_active').find('li').length;
+		if(num > 1){
+		   var time=setInterval('timer(".notice_active")',3500);
+			$('.gg_more a').mousemove(function(){
+				clearInterval(time);
+			}).mouseout(function(){
+				time = setInterval('timer(".notice_active")',3500);
+			}); 
+		}
+		$(".news_ck").click(function(){
+			location.href = $(".notice_active .notice_active_ch").children(":input").val();
+		})
+	});
+</script>
+<SCRIPT language=javascript src="js/Designer.js"></SCRIPT>
+</head>
+<body>
+<div class="box">
+  <div class="top_box">
+    <div class="top">
+      <div class="logo"><img src="images/logo.png" alt="垃圾分类推进系统" title="垃圾分类推进系统"></div>
+	  <div class="menu">
+        <ul>
+          <li><a href="index.html">网站首页</a></li>
+          <li><a href="drop_litter.html">垃圾投放</a></li>
+          <li><a href="report_threw.html">举报乱投</a></li>
+          <li><a href="accept_assignment.html">接取任务</a></li>
+          <li><a href="regional_supervision.html">区域监督</a></li>
+		  <li><a href="personal_information.html">个人信息</a></li>
+        </ul>
+      </div>
+      </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="banner fl"></div>
+
+<div class="clear"></div>
+	<div class="fl box">
+	  <div class="top_big">
+		<div class="top_big2">
+		  <div class="banner_box_2"></div>
+		  <div class="banner_new fl">
+			<div class="huadong  fl">
+			  <div class="huabox">
+				<h5>【公告】</h5>
+				<div class="notice_active">
+				  <ul>
+					<li class="notice_active_ch"> <span>26号楼508宿舍张权刚预约了投放</span> </li>
+					<li class="notice_active_ch"> <span>盛唐至尊杨英、亚东投放垃圾无误提出表扬</span> </li>
+					<li class="notice_active_ch"> <span>管理员检查出明月投放的垃圾存在误投情况，鉴于第一次提出</span> </li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+			<div class="banner_serch fl">
+			  <input name="" type="text" class="serch_1 fl" placeholder="请输入关键词搜索">
+			  <input name="" type="submit" class="submit_1 fl" value="提交">
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</body>
+</html>
